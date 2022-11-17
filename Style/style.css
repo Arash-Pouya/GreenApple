@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "Sahle";
+  src: url("/Style/Sahel-Black-FD.ttf");
+}
+body {
+  font-family: "Sahle", Arial, sans-serif !important;
+  direction: rtl;
+}
+/* header */
+nav {
+  backdrop-filter: blur(20px);
+  background-color: rgba(248, 248, 248, 0.777);
+  color: black !important;
+}
+header {
+  align-items: center;
+  background-color: rgb(43, 182, 43);
+  color: white;
+}
+
+.GAlogo {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding-top: 60px;
+}
+.GAlogo img {
+  width: 30%;
+}
+
+/* container */
+div.container {
+  margin-top: 50px;
+}
+div.container .card img {
+  border-radius: 10px;
+}
+div.container .card {
+  margin-top: 20px;
+}
+
+div.container .card:hover {
+  /* border: none; */
+  /* border: 1px solid rgb(43, 182, 43); */
+  -webkit-box-shadow: 0px -7px 52px -25px rgba(41, 182, 43, 1);
+  -moz-box-shadow: 0px -7px 52px -25px rgba(41, 182, 43, 1);
+  box-shadow: 0px -7px 52px -25px rgba(41, 182, 43, 1);
+}
+div.container .card .card-title {
+  margin: auto;
+  text-align: center;
+  padding: 5px;
+  border-radius: 20px;
+}
+/* iphone page */
+#Panel {
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+}
