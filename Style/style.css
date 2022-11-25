@@ -1,62 +1,162 @@
-@font-face {
-  font-family: "Sahle";
-  src: url("/Style/Sahel-Black-FD.ttf");
-}
 body {
-  font-family: "Sahle", Arial, sans-serif !important;
   direction: rtl;
 }
-/* header */
+@font-face {
+  font-family: "Sahel";
+  src: url("../Style/Sahel-Black-FD.ttf");
+}
+body {
+  font-family: "Sahel", Arial, sans-serif !important;
+}
+/* navbar */
 nav {
-  backdrop-filter: blur(20px);
-  background-color: rgba(248, 248, 248, 0.777);
-  color: black !important;
+  -webkit-box-shadow: 0px 7px 19px -19px rgba(0, 168, 20, 1);
+  -moz-box-shadow: 0px 7px 19px -19px rgba(0, 168, 20, 1);
+  box-shadow: 0px 7px 19px -19px rgba(0, 168, 20, 1);
 }
-header {
-  align-items: center;
-  background-color: rgb(43, 182, 43);
-  color: white;
-}
-
-.GAlogo {
-  width: 30%;
+.navbar-brand {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: auto;
-  padding-top: 60px;
+  flex-direction: row;
+  width: 250px;
+  /* justify-content: space-around; */
 }
-.GAlogo img {
-  width: 30%;
+.navbar-brand img {
+  max-width: 25%;
 }
-
-/* container */
-div.container {
-  margin-top: 50px;
+.navbar-collapse {
+  /* float: right !important; */
 }
-div.container .card img {
-  border-radius: 10px;
-}
-div.container .card {
+.container-fluid {
   margin-top: 20px;
 }
+/* carousel */
+.carousel-inner {
+  background-color: #111;
+}
+.carousel-inner img {
+  margin: 0px auto;
+}
+/* carousel */
 
-div.container .card:hover {
-  /* border: none; */
-  /* border: 1px solid rgb(43, 182, 43); */
-  -webkit-box-shadow: 0px -7px 52px -25px rgba(41, 182, 43, 1);
-  -moz-box-shadow: 0px -7px 52px -25px rgba(41, 182, 43, 1);
-  box-shadow: 0px -7px 52px -25px rgba(41, 182, 43, 1);
-}
-div.container .card .card-title {
-  margin: auto;
-  text-align: center;
-  padding: 5px;
-  border-radius: 20px;
-}
-/* iphone page */
-#Panel {
-  justify-content: center;
-  width: 80%;
+/* side mega menu  */
+.menu-container {
+  width: 100%;
   margin: 0 auto;
+  padding: 20px 0;
+  direction: rtl;
+}
+.menu {
+  width: 150px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  position: relative;
+  padding: 0 0 0 4px;
+  margin: 0;
+}
+.menu a,
+.menu a:link,
+.menu a:visited,
+.menu a:focus,
+span {
+  color: black;
+  text-decoration: none;
+}
+.menu a:hover {
+  color: #227087;
+  text-decoration: none;
+}
+.menu > li {
+  display: block;
+  text-align: center;
+  margin-left: -4px;
+  border-left: 1px solid rgb(0, 200, 7);
+  box-shadow: -1px 0 0 rgba(0, 0, 0, 0.1);
+}
+.menu > li > a {
+  padding: 20px 18px;
+  display: block;
+}
+.menu > li:hover > a {
+  color: #227087;
+}
+.menu > li:hover {
+  background-color: #fff;
+}
+/* Megadrop width dropdown */
+.menu > li > .megadrop {
+  background-color: white;
+  border: 1px solid green;
+  direction: rtl;
+  float: left;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  list-style: none;
+  top: 0px;
+  right: 153px;
+  width: 700px;
+  min-height: 100%;
+  text-align: right;
+  margin-top: 30px;
+  padding: 0;
+  z-index: 99;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  overflow: hidden;
+}
+.menu > li:hover .megadrop {
+  opacity: 1;
+  visibility: visible;
+  margin-top: 0px;
+}
+.menu ul li:hover:after {
+  color: #227087;
+}
+.menu .col {
+  width: 14.1%;
+  float: right;
+  color: white;
+  margin: 0 1%;
+}
+.menu .col ul {
+  padding: 0;
+  margin: 0;
+}
+.menu .col ul li {
+  padding: 0;
+  list-style: none;
+  font-size: 11px;
+}
+.menu .col h3 {
+  font-size: 16px;
+  padding: 10px 0;
+  font-weight: bold;
+  margin: 5px 0 5px 0;
+  color: black;
+  /* background: #eee; */
+}
+.menu .col ul li a {
+  display: block;
+  padding: 0 0 15px 0;
+  color: #227087;
+}
+.menu .col ul li a:hover {
+  color: #111;
+  text-decoration: underline;
+}
+.menu > li > ul li ul,
+.menu li > ul li,
+.menu > li > .megadrop,
+.menu > li > ul,
+.menu > li {
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-outs;
+}
+/* side mega menu  */
+.carousel-item img {
+  max-width: 80%;
 }
