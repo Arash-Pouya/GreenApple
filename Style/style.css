@@ -30,6 +30,10 @@ nav {
   margin-top: 20px;
 }
 /* carousel */
+#Carousel{
+  background-color: red;
+  margin-bottom: 50px;
+}
 .carousel-inner {
   background-color: #111;
 }
@@ -160,3 +164,6 @@ span {
 .carousel-item img {
   max-width: 80%;
 }
+/* ///////////////////////////////////////////////////// */
+
+/* /////////////////////////////// */
