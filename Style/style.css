@@ -13,6 +13,7 @@ nav {
   -webkit-box-shadow: 0px 7px 19px -19px rgba(0, 168, 20, 1);
   -moz-box-shadow: 0px 7px 19px -19px rgba(0, 168, 20, 1);
   box-shadow: 0px 7px 19px -19px rgba(0, 168, 20, 1);
+  background-color: #111 !important;
 }
 .navbar-brand {
   display: flex;
@@ -28,6 +29,11 @@ nav {
 }
 .container-fluid {
   margin-top: 20px;
+}
+#PROF{
+  background-color: red;
+justify-content: left ;
+width: 50%;  
 }
 /* carousel */
 #Carousel{
@@ -164,6 +170,33 @@ span {
 .carousel-item img {
   max-width: 80%;
 }
-/* ///////////////////////////////////////////////////// */
+/* side mega menu  */
 
-/* /////////////////////////////// */
+/* center favorite */
+#FAV{
+  padding-top: 20px;
+  padding-bottom: 20px; /* delete*/
+
+}
+
+#FAV .card img{
+  /* border-radius: 10px; */
+  max-width: 259px;
+  max-height: 194px;
+  margin: auto;
+}
+#FAV p{
+  border-bottom: 1px solid green ;
+}
+#FAV p span{
+  justify-content: left;
+  color: red;
+  float: left;
+}
+#FAV .card{
+  border-radius: 30px;
+}
+#FAV .card h5{
+  text-align: center;
+}
+/* center favorite */
